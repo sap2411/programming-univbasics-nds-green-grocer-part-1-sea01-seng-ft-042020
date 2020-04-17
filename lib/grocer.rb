@@ -15,7 +15,7 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(key[:item], consolidated)[:count] === nil
       key[:count] = 1 
     else
-      delete.key
+      find
   end
  end
  binding.pry
