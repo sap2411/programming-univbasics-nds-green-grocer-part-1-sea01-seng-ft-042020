@@ -11,7 +11,10 @@ end
 
 def consolidate_cart(cart)
   cart.map do |key, value|
-    binding.pry
+    if !key[:count]
+      key[:count] = 1 
+    else
+      key[:]
   end
 
 end
