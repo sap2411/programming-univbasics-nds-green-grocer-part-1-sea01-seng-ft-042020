@@ -6,6 +6,7 @@ def find_item_by_name_in_collection(name, collection)
       return key_num
     end
   end
+  nil
 end
 
 def consolidate_cart(cart)
