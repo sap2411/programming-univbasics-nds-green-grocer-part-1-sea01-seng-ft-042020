@@ -1,6 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.map do |key_num, value|
-    if value[:item] === name
+    if key_num[:item] === name
       return value
     end
   end
