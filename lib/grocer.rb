@@ -1,6 +1,9 @@
+require "pry"
+
 def find_item_by_name_in_collection(name, collection)
   collection.map do |key_num, value|
     if key_num[:item] === name
+      binding.pry
       return value
     end
   end
