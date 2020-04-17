@@ -15,10 +15,10 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(key[:item], consolidatded) === nil
       key[:count] = 1 
       consolidatded <<< key
-    elsif 
-      consolidatded
+    else
+      find_item_by_name_in_collection(key[:item], consolidatded)[:count] +=1
   end
-
+ end
 end
 
 
