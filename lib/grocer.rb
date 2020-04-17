@@ -16,7 +16,7 @@ def consolidate_cart(cart)
       key[:count]
       consolidated << key
     else
-      find_item_by_name_in_collection(key[:item], consolidated)[:count] +=1
+      find_item_by_name_in_collection(key[:item], consolidated)[:count] 
   end
  end
 end
