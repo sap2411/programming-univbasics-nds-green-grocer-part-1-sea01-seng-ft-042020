@@ -12,7 +12,7 @@ end
 def consolidate_cart(cart)
   consolidated = []
   cart.map do |key, value|
-    if find_item_by_name_in_collection(key[:item], consolidatded) === nil
+    if find_item_by_name_in_collection(key[:item], consolidated) === nil
       key[:count] = 1 
       consolidatded << key
     else
