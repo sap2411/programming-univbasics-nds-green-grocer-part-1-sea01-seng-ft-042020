@@ -1,8 +1,9 @@
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
-
+  collection.map do |key_num, value|
+    if value[:item] === name
+      return value
+    end
+    return nil
 end
 
 def consolidate_cart(cart)
